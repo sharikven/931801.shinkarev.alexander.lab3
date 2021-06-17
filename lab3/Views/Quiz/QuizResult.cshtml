@@ -1,0 +1,16 @@
+﻿@using lab3.Models
+@model lab3.Models.QuestionList
+@{
+    ViewBag.Title = "Hello Mockups - Backend3";
+    var qList = ViewBag.qList;
+}
+
+<h1>Quiz result </h1>
+
+<h2>Right answers @qList.rightAnswers out @qList.questionCount</h2>
+<ol>
+    @foreach(Question q in qList.list())
+            {
+                <li>@q.question  @q.userAnswer</li>
+            }
+</ol>

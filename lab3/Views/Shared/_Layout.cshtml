@@ -1,0 +1,21 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <title>@ViewBag.Title - Backend3</title>
+</head>
+<body>
+    <header>
+        <h2>Backend3</h2>
+        <nav style="margin: 0 10px 0 0;"><a asp-controller="Home" asp-action="Index">Home</a></nav>
+        <nav><a asp-controller="Home" asp-action="MockIndex">Mockups</a></nav>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        <hr />
+        © 2021 - Backend3
+    </footer>
+</body>
+</html>
